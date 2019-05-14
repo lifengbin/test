@@ -1,0 +1,26 @@
+public enum TaskCategory
+    {
+        设计任务 = 1,
+        客户任务 = 2,
+        临时任务 = 3,
+        协同任务 = 4,
+        质量任务 = 5,
+        /// <summary>
+        /// 管理任务
+        /// </summary>
+        管理任务 = 6,/*2018-10-31 管理任务*/
+    }
+	
+	SELECT top 1000 *
+  FROM [TaskCollectWeek] 
+  where UserFullName ='陈艳茹' and ProjectName = '科华君悦府项目'
+  order by id desc
+
+
+ select * from [dbo].[TaskInfo] where id in(59222,59223)
+ 
+ 延期确认统计
+ 
+ 1、设计任务 -5
+ 2、协同任务 -2
+ 
